@@ -1,0 +1,9 @@
+def xorSequence(l, r):
+    prev=0
+    ans=0
+    for i in range(1,r+1):
+        nxt=prev^i
+        if i>=l:
+            ans^=nxt
+        prev=nxt
+    return ans
